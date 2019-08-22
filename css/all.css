@@ -85,6 +85,7 @@ h3:visited a{
     background: #666;
     border-radius: 0px 5px 0px 5px;
     border:blanchedalmond 2px solid;
+    
 }
 .nav li a{
     color: #000;
@@ -92,6 +93,7 @@ h3:visited a{
 }
 .nav li:hover a{
     color: blanchedalmond;
+    filter: drop-shadow(5px 5px 5px #000000a6);
 }
 
 
