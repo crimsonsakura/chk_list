@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-hant-Tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+    
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.7"></script>
+    
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css"
+        media="screen" />
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css"
+        media="screen" />
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="js/all.js"></script>    
+    <link rel="stylesheet" href="css/all.css">
+    <title>第三站確認清單</title>
+</head>
+<body>
+    <div class="warp">
+        <h1>第三站確認清單</h1></a>
+        <div class="nav">
+            <ol>
+                <ul>
+                    <li><a href="VM">基本設定</a></li>
+                    <li><a href="FTP">FTP</a></li>
+                    <li><a href="WEB">WEB</a></li>
+                </ul>
+            </ol>
+        </div>
+        <div class="content">
+            <a href="">
+                <h2 href="img/examination_room.png" id="single_1" title="考場環境">考場環境</h2>
+            </a>    
+            <form action="">
+                <h2 id="VM">基本設定</h2>
+                <ol>
+                    <li><input type="checkbox" name="" id="chk1">VMware設定兩台虛擬主機環境</li>
+                    <li><input type="checkbox" name="" id="chk2">安裝CentOS</li>
+                </ol>
+                <h2 id="FTP">FTP</h2>
+                <ol>
+                    <h3>FTP PC1｜<a href="img/PcRoute.png" id="single_1" title="設定&啟動PC1路由功能">流程</a></h3>
+                    <li><input type="checkbox" name="" id="chk3">設定&啟動PC1路由功能</li>
+                    <li><input type="checkbox" name="" id="chk4">關閉SELINUX</li>
+                    <!-- <li><input type="checkbox" name="" id="chk5"></li> -->
+                    <h3>FTP-1 PC2｜<a href="img/FTP1.png" id="single_1" title="FTP1流程">流程</a></h3>
+                    <li><input type="checkbox" name="" id="FTPchk1">關閉防火牆</li>
+                    <li><input type="checkbox" name="" id="FTPchk2">關閉SELINUX</li>
+                    <li><input type="checkbox" name="" id="FTPchk3">設定開機時啟動vsftpd</li>
+                    <li><input type="checkbox" name="" id="FTPchk4">調整vsftpd設定檔</li> 
+                    <li><input type="checkbox" name="" id="FTPchk5">/修改歡迎詞</li>
+                    <h3>FTP-2 PC2｜<a href="img/FTP2.png" id="single_1" title="FTP2流程">流程</a></h3>
+                    <li><input type="checkbox" name="" id="FTPchk6">產生skel檔</li>
+                    <li><input type="checkbox" name="" id="FTPchk7">創建使用者</li>
+                    <li><input type="checkbox" name="" id="FTPchk8">修改使用者FTP資料夾路徑</li>
+                    <li><input type="checkbox" name="" id="FTPchk9">建立vsftpd2.conf</li>
+                    <li><input type="checkbox" name="" id="FTPchk10">建立歡迎詞</li>
+                    <li><input type="checkbox" name="" id="FTPchk11">進入檔案系統表，告知要以根目錄掛載</li>
+                    <li><input type="checkbox" name="" id="FTPchk12">進行quotacheck</li>
+                    <li><input type="checkbox" name="" id="FTPchk13">修改quotacheck</li>
+                    <li><input type="checkbox" name="" id="FTPchk14">啟動quouta</li>
+                    <li><input type="checkbox" name="" id="FTPchk15">鎖定FTP登入者只能看見upload目錄</li>
+                    <li><input type="checkbox" name="" id="FTPchk16">重啟vsftpd</li>
+                    <li><input type="checkbox" name="" id="FTPchk17">建立700kb檔案</li>
+                    <li><input type="checkbox" name="" id="FTPchk18">上傳700kb檔案</li>
+                </ol>
+                <h2 id="WEB">WEB｜<a href="img/WEB.png" id="single_1" title="WEB流程">流程</a></h2>
+                <ol>  
+                    <li><input type="checkbox" name="" id="WEBchk1">建立skel檔</li>
+                    <li><input type="checkbox" name="" id="WEBchk2">建立使用者</li>
+                    <li><input type="checkbox" name="" id="WEBchk3">設定伺服器監聽80Port</li>
+                    <li><input type="checkbox" name="" id="WEBchk4">設定伺服器監聽443Port</li>
+                    <li><input type="checkbox" name="" id="WEBchk5">限定IP：200.100.XX.1造訪</li>
+                    <li><input type="checkbox" name="" id="WEBchk6">建立密法認證檔</li>
+                    <li><input type="checkbox" name="" id="WEBchk7">資料夾權限設定</li>
+                </ol>
+            </form>
+        </div>
+        <footer>
+            <ul>
+                <li>檔案下載：</li>
+                <li><a href="#">word</a></li>
+            </ul>
+            <ul>
+                <li>創作者:</li>
+                <li>crimson</li>
+            </ul>
+            <ul>
+                <li>清單資料參考:</li>
+                <li>AlexTrinity</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
+
