@@ -17,15 +17,18 @@ H1{
     font-size: 30px;
     text-align: center;
     margin: 20px 0 20px 0;
+    filter: drop-shadow(1px 1px 1px #000000);
 }
 h2{
     font-size: 26px;
     text-align: center;
     margin: 20px 0 20px 0;
+    filter: drop-shadow(1px 1px 1px #000000);
 }
 h3{
     font-size: 20px;
     margin: 20px 0 20px 0;
+    filter: drop-shadow(1px 1px 1px #000000);
 }
 .nav ul{
     margin: 20px 0 20px 0;
