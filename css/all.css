@@ -25,10 +25,46 @@ h2{
     margin: 20px 0 20px 0;
     filter: drop-shadow(1px 1px 1px #000000);
 }
+a h2{
+    color: salmon;
+}
+a h2:hover{
+    color: aliceblue;
+}
+a h2:active{
+    color: salmon;
+}
+a h2:visited{
+    color: salmon;
+}
+h2 a{
+    color: salmon;
+}
+h2:hover a{
+    color: aliceblue;
+}
+h2:active a{
+    color: salmon;
+}
+h2:visited a{
+    color: salmon
+}
 h3{
     font-size: 20px;
     margin: 20px 0 20px 0;
     filter: drop-shadow(1px 1px 1px #000000);
+}
+h3 a{
+    color: salmon;
+}
+h3:hover a{
+    color: aliceblue;
+}
+h3:active a{
+    color:salmon;
+}
+h3:visited a{
+    color:salmon;
 }
 .nav ul{
     margin: 20px 0 20px 0;
@@ -57,6 +93,8 @@ h3{
 .nav li:hover a{
     color: blanchedalmond;
 }
+
+
 .content{
     /* border: chocolate 1px solid;
     border-radius: 5px; */
